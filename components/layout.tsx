@@ -8,6 +8,7 @@ export default function Layout({ children }: React.PropsWithChildren<{}>) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <NavBar />
       <main>{children}</main>
     </>
   );
