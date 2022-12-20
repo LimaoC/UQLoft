@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -8,10 +11,15 @@ module.exports = {
     colors: {
       current: "currentColor",
       transparent: "transparent",
-      black: "#000000",
-      white: "#ffffff",
+      black: colors.black,
+      gray: colors.gray,
+      white: colors.white,
       uqgold: "#bb9d65",
-      uqpurple: "#51247a",
+      uqpurple: {
+        DEFAULT: "#51247a",
+        secondary: "#49206e",
+        faded: "#a892bd",
+      },
     },
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
